@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Test Mobile</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <nav class="fixed z-50 left-0 top-0 w-full">
+      <div class="navbar bg-base-100">
+        <div class="navbar-start">
+          <div class="dropdown">
+            <div
+              id="menuButton"
+              tabindex="0"
+              role="button"
+              class="btn btn-ghost btn-circle"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-5 w-5"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M4 6h16M4 12h16M4 18h7"
+                />
+              </svg>
+            </div>
+            <ul
+              id="menuList"
+              tabindex="0"
+              class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow hidden"
+            >
+              <li><a href="index.html">Homepage</a></li>
+              <li><a href="contact.html">Contact</a></li>
+              <li><a href="about.html">About</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="navbar-center">
+          <a class="btn btn-ghost text-xl">About - Responsive Challenging</a>
+        </div>
+        <div class="navbar-end">
+          <button id="searchButton" class="btn btn-ghost btn-circle">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-5 w-5"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"
+              />
+            </svg>
+          </button>
+        </div>
+      </div>
+    </nav>
+
+    <section class="pt-32 px-16 py-16 flex flex-wrap">
+      <div>
+        <div>
+          <h1 class="text-xl mb-2">Tentang Kami</h1>
+          <p class="mb-4">
+            Selamat datang di [Nama Perusahaan]! Kami adalah [deskripsi singkat
+            tentang perusahaan Anda], yang berfokus pada [bidang industri atau
+            layanan yang Anda tawarkan]. Kami berkomitmen untuk memberikan
+            [nilai atau tujuan utama perusahaan] kepada setiap pelanggan.
+          </p>
+        </div>
+        <div>
+          <h1 class="text-xl mb-2">Visi Kami</h1>
+          <p class="mb-4">
+            Menjadi [visi perusahaan Anda], dengan fokus pada [aspek yang ingin
+            dicapai].
+          </p>
+        </div>
+        <div>
+          <h1 class="text-xl mb-2">Misi Kami</h1>
+          <ul>
+            <li class="mb-1">
+              Kepercayaan: Kami percaya bahwa setiap hubungan yang baik dimulai
+              dengan kepercayaan.
+            </li>
+            <li class="mb-1">
+              Inovasi: Kami selalu berusaha untuk berinovasi dan mengikuti
+              perkembangan terbaru di industri kami.
+            </li>
+            <li class="mb-4">
+              Kualitas: Kami mengutamakan kualitas dalam setiap produk dan
+              layanan yang kami tawarkan.
+            </li>
+          </ul>
+        </div>
+        <div>
+          <h1 class="text-xl mb-2">Sejarah Kami</h1>
+          <p class="mb-4">
+            [Perusahaan Anda] didirikan pada [tahun pendirian] dengan tujuan
+            untuk [tujuan awal atau visi pendirian perusahaan]. Sejak itu, kami
+            telah berkembang menjadi [pencapaian atau milestone yang telah
+            dicapai]. Kami berterima kasih kepada semua pelanggan dan mitra yang
+            telah mendukung kami selama ini, dan kami berkomitmen untuk terus
+            berkembang demi memberikan pelayanan terbaik.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer bg-neutral text-neutral-content p-10 py-16 pt-16">
+      <nav>
+        <h6 class="footer-title">Services</h6>
+        <a class="link link-hover">Branding</a>
+        <a class="link link-hover">Design</a>
+        <a class="link link-hover">Marketing</a>
+        <a class="link link-hover">Advertisement</a>
+      </nav>
+      <nav>
+        <h6 class="footer-title">Company</h6>
+        <a class="link link-hover">About us</a>
+        <a class="link link-hover">Contact</a>
+        <a class="link link-hover">Jobs</a>
+        <a class="link link-hover">Press kit</a>
+      </nav>
+      <nav>
+        <h6 class="footer-title">Legal</h6>
+        <a class="link link-hover">Terms of use</a>
+        <a class="link link-hover">Privacy policy</a>
+        <a class="link link-hover">Cookie policy</a>
+      </nav>
+    </footer>
+
+    <script>
+      // Toggle dropdown menu
+      const menuButton = document.getElementById("menuButton");
+      const menuList = document.getElementById("menuList");
+
+      menuButton.addEventListener("click", () => {
+        menuList.classList.toggle("hidden");
+      });
+
+      // Membuat tombol pencarian interaktif
+      const searchButton = document.getElementById("searchButton");
+
+      searchButton.addEventListener("click", () => {
+        alert("Tombol pencarian diklik!");
+        // Anda bisa menambahkan fungsionalitas pencarian di sini
+      });
+    </script>
+  </body>
+</html>
